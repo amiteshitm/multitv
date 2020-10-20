@@ -1,0 +1,4 @@
+--require @babel/register
+--file ./test/setup-mongo.js
+--exclude node_modules
+./{,!(node_modules)/**}/*.spec.js

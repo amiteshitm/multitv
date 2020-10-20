@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mutation creates category creates child category 1`] = `
+Object {
+  "data": Object {
+    "categoryCreate": Object {
+      "record": Object {
+        "desc": "This is a category description to test",
+        "name": "First Category",
+      },
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`mutation creates category creates parent category 1`] = `
+Object {
+  "data": Object {
+    "categoryCreate": Object {
+      "record": Object {
+        "desc": "This is a category description to test",
+        "name": "First Category",
+      },
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

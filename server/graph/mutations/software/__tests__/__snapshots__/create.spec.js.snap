@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mutation creates category software creation creates software with valid inputs 1`] = `
+Object {
+  "record": Object {
+    "categories": Array [
+      Any<String>,
+    ],
+    "desc": "This is a software description to test",
+    "details": "This is the first software",
+    "name": "Test Software",
+    "root_category": Object {
+      "name": Any<String>,
+    },
+    "slug": "test-software",
+  },
+}
+`;

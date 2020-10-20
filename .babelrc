@@ -1,0 +1,25 @@
+{
+  "presets": ["@babel/react", "next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "components": "./components",
+          "test": "./test",
+          "server": "./server"
+        },
+        "extensions": [".js", ".jsx", ".es", ".es6", ".mjs", ".ts"]
+      }
+    ],
+    ["@babel/plugin-proposal-class-properties"],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
+    ]
+  ]
+}

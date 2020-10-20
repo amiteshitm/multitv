@@ -1,0 +1,57 @@
+@import '~antd/lib/style/themes/default.less';
+
+@page: page;
+.@{page}-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .@{page} {
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    will-change: transform;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    &.ant-typography {
+      font-weight: 400;
+    }
+  }
+  .row-wrapper {
+    padding: 16px 0;
+  }
+}
+
+.@{page} {
+  padding: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .@{page}-wrapper {
+    .@{page} {
+      padding: 56px 24px;
+      > h1 {
+        font-size: 24px;
+        margin: 0 auto 32px;
+        &.title-h1 {
+          margin-bottom: 8px;
+        }
+      }
+      > p {
+        margin-bottom: 32px;
+      }
+    }
+    h1 {
+      &.ant-typography {
+        font-size: 32px;
+      }
+    }
+    td,
+    p {
+      font-size: 14px;
+    }
+  }
+}
